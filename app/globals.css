@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.dark-theme body {
+  color: #fff;
+  background-color: #06050A;
+}
+.light-theme {}

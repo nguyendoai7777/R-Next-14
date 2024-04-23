@@ -1,0 +1,42 @@
+{
+  "name": "next-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev  -p 4300",
+    "sstg": "npm run serve:stg",
+    "sdev": "npm run serve:dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "serve:stg": "env-cmd -f .env.stg npm run dev",
+    "serve:dev": "env-cmd -f .env.dev npm run dev",
+    "build:stg": "env-cmd -f .env.st npm run build",
+    "build:prod": "env-cmd -f .env.prod npm run build",
+    "build-serve:stg": "env-cmd -f .env.stg npm run build && npm run start",
+    "build-serve:prod": "env-cmd -f .env.stg npm run build && npm run start"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "@mui/icons-material": "^5.15.15",
+    "@mui/material": "^5.15.15",
+    "antd": "^5.16.2",
+    "dotenv": "^16.4.5",
+    "next": "14.2.1",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-hook-form": "^7.51.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "env-cmd": "^10.1.0",
+    "loader-utils": "^3.2.1",
+    "postcss": "^8",
+    "sass": "^1.75.0",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
+  }
+}
